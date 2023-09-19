@@ -1,0 +1,38 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "A template for my basic Express apps",
+  "main": "src/app.ts",
+  "type": "module",
+  "scripts": {
+    "start": "tsc && node dist/app.js",
+    "dev": "nodemon",
+    "build": "tsc",
+    "lint": "eslint . --report-unused-disable-directives",
+    "format": "prettier --write ."
+  },
+  "keywords": [],
+  "author": "lanceHoenhymmm",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "express-async-errors": "^3.1.1",
+    "jsonwebtoken": "^9.0.2",
+    "helmet": "^7.0.0",
+    "dotenv": "^16.3.1",
+    "http-status-codes": "^2.2.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/jsonwebtoken": "^9.0.3",
+    "@typescript-eslint/eslint-plugin": "^6.6.0",
+    "@typescript-eslint/parser": "^6.6.0",
+    "eslint": "^8.49.0",
+    "eslint-config-prettier": "^9.0.0",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
+}
