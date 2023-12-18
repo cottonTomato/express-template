@@ -1,6 +1,7 @@
 # Regular Stuff
 node_modules
 dist
+.DS_Store
 
 # Config Files and Keys
 .env
