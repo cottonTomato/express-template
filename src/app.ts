@@ -1,10 +1,12 @@
 import express from 'express';
+import 'express-async-errors';
 import cors from 'cors';
-import { default as helmet } from 'helmet';
+import helmet from 'helmet';
 import logger from 'morgan';
 
 const port = process.env.PORT ?? 8080;
 const isProduction = process.env.NODE_ENV === 'production';
+
 const app = express();
 
 app.use(express.json());
